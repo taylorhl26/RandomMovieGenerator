@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Random Movie Generator</title>
+    <link rel="stylesheet" href="styleSheet.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <div class="webPageHeading">
+        <div class="dropDown">
+            <button class="dropDownButton"><img id="dropDownMenuIcon" src="Images/dropDownMenuIcon.png"></button>
+            <nav class="dropDownContent">
+                <a href="index.html">Home</a>
+                <a href="movieGenerator.html">Restart</a>
+            </nav>
+        </div>
+
+        <div  class="webAppTitle">
+            <h1>Random Movie Generator</h1>
+        </div>
+    </div>
+
+    <div class="alert hide" id="missingInfoAlertContainer">
+        <p id="missingInfoAlertMessage">You must select a genre to continue.</p>
+    </div>
+
+    <!-- Genre quiz, default displayed-->
+    <div id="genreQuizContainer">
+        <div class="quizLabel">
+            <h2>Choose a genre..</h2>
+        </div>
+        <div class="quizOptions">
+                <button class="quizOptionBtn" id="horror">Horror</button>
+                <button class="quizOptionBtn" id="action">Action</button>  
+                <button class="quizOptionBtn" id="romCom">Rom-Com</button>
+                <button class="quizOptionBtn" id="sciFi">Sci-Fi</button>
+                <button class="quizOptionBtn" id="comedy">Comedy</button>
+                <button class="quizOptionBtn" id="family">Family</button>
+        </div>
+        <button class="btn" id="nextBtn">Next</button>
+    </div>
+
+
+    <!-- Decade quiz, default hidden-->
+    <div id="decadeQuizContainer" class="hide">
+        <div class="quizLabel" id="decadeQuizLabel">
+            <h2>Choose a decade..</h2>
+        </div>
+
+        <div class="quizOptions">
+            <button class="quizOptionBtn" id="seventies">1970-1979</button>
+            <button class="quizOptionBtn" id="eighties">1980-1989</button>  
+            <button class="quizOptionBtn" id="nineties">1990-1999</button>
+            <button class="quizOptionBtn" id="ones">2000-2009</button>           
+            <button class="quizOptionBtn" id="tens">2010-2019</button>
+            <button class="quizOptionBtn" id="twenties">2020</button>
+        </div>
+
+        <button class="btn" id="submitBtn">Submit</button>
+    </div>  
+
+    <div class="hide" id="resultsDisplay">
+        <p>Your random movie selection is...</p>
+        <div id="result">
+            Result
+        </div>
+    </div>
+
+</body>
+</html>
+
